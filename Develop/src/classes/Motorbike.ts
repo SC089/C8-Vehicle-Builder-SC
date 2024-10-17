@@ -52,18 +52,18 @@ class Motorbike extends Vehicle {
   doWheelie(): void {
     if (!this.isDoingWheelie) {
       this.isDoingWheelie = true;
-      console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`)
+      console.log(`Motorbike ${this.make} ${this.model} is doing a wheelie!`);
     } else {
-      console.log(`Motorbike ${this.make} ${this.model} is already doing a wheelie!`)
+      console.log(`Motorbike ${this.make} ${this.model} is already doing a wheelie!`);
     }
   }
 
   stopWheelie(): void {
     if (this.isDoingWheelie) {
       this.isDoingWheelie = false;
-      console.log(`Motorbike ${this.make} ${this.model} has stopped doing a wheelie.`)
+      console.log(`Motorbike ${this.make} ${this.model} has stopped doing a wheelie.`);
     } else {
-      console.log(`Motorbike ${this.make} ${this.model} is not doing a wheelie.`)
+      console.log(`Motorbike ${this.make} ${this.model} is not doing a wheelie.`);
     }
   }
 
