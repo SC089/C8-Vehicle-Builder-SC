@@ -62,6 +62,11 @@ class Truck extends Vehicle {
     // TODO: If it is not, log that the vehicle is too heavy to be towed
     const { make, model, weight } = vehicle;
 
+    if (vehicle === this) {
+      console.log(`Truck ${this.make} ${this.model} cannot tow itself`);
+      return;
+    }
+
     if (weight <= this.towingCapacity) {
       console.log(`Truck ${this.make} ${this.model} is towing ${make} ${model} weighing ${weight} lbs.`);
     } else {
@@ -83,6 +88,7 @@ class Truck extends Vehicle {
       console.log(`Year: ${this.year}`);
       console.log(`Weight: ${this.weight}`);
       console.log(`Top Speed: ${this.topSpeed}`);
+      console.log(`Towing Capacity: ${this.towingCapacity}`);
 
       console.log(
         `Wheel 1: ${this.wheels[0].getDiameter} inch with a ${this.wheels[0].getTireBrand} tire`
